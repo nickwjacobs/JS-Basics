@@ -18,10 +18,8 @@ var name = 'Tyler';
 
 
 //Create a function called getName that uses prompt() to prompt the user for their name, then returns the name.
-function getName = prompt("Please enter your name", "John"){
-    return ("Hello" + getName + "! How are you today?";
-
-    }
+function getName(){
+    return prompt("What is your name?")
 
 
 }
@@ -37,6 +35,13 @@ function getName = prompt("Please enter your name", "John"){
 //then alerts "Welcome, " plus whatever the users name is.
 
   //Code Here
+  function welcome(){
+
+    var name = getName()
+
+
+    alert("Welcome, "+ name);
+  }
 
 
 //////////////////PROBLEM 4////////////////////
@@ -67,11 +72,14 @@ function getName = prompt("Please enter your name", "John"){
 //Create a function called myName that returns your name
 
   //Code Here
+  function myName(){
+    return ("nick");
+  }
 
 
 
 //Now save the function definition of myName into a new variable called newMyName
-
+var newMyName = myName;
   //Code Here
 
 //Now alert the result of invoking newMyName
@@ -85,9 +93,13 @@ function getName = prompt("Please enter your name", "John"){
 //Create a function called outerFn which returns an anonymous function which returns your name.
 
   //Code Here
-
+function outerFn(){
+  return function(){
+    return "Nick";
+  }
+}
 //Now save the result of invoking outerFn into a variable called innerFn.
-
+var innerFn = outerFn();
   //Code Here
 
 //Now invoke innerFn.
